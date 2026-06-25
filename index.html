@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackbot OS 软件源</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            color: #00d4ff;
+            margin-bottom: 10px;
+        }
+        .header p {
+            color: #8892b0;
+            font-size: 1.1em;
+        }
+        .info-box {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        .info-box h2 {
+            color: #00d4ff;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .info-item {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .info-item .label {
+            color: #8892b0;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+        .info-item .value {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .packages {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 12px;
+            padding: 25px;
+        }
+        .packages h2 {
+            color: #00d4ff;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+        .package-list {
+            list-style: none;
+        }
+        .package-item {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
+        }
+        .package-item:hover {
+            background: rgba(0, 212, 255, 0.1);
+            transform: translateX(5px);
+        }
+        .package-name {
+            font-weight: bold;
+            color: #fff;
+        }
+        .package-desc {
+            color: #8892b0;
+            font-size: 0.9em;
+            margin-top: 3px;
+        }
+        .package-version {
+            color: #00d4ff;
+            font-size: 0.9em;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #8892b0;
+            font-size: 0.9em;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.2);
+            color: #00d4ff;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚡ Jackbot OS 软件源</h1>
+            <p>1000 Ultimate Edition - 官方软件仓库</p>
+        </div>
+
+        <div class="info-box">
+            <h2>📊 源信息</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="label">版本</div>
+                    <div class="value">1000 Ultimate</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">架构</div>
+                    <div class="value">x86_64</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">软件包数量</div>
+                    <div class="value">10+</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">状态</div>
+                    <div class="value" style="color: #4ade80;">● 在线</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="packages">
+            <h2>📦 可用软件包</h2>
+            <ul class="package-list">
+                <li class="package-item">
+                    <div>
+                        <div class="package-name">jackbot-core <span class="badge">核心</span></div>
+                        <div class="package-desc">Jackbot OS 核心系统组件</div>
+                    </div>
+                    <div class="package-version">1000-1</div>
+                </li>
+                <li class="package-item">
+                    <div>
+                        <div class="package-name">jackbot-desktop <span class="badge">桌面</span></div>
+                        <div class="package-desc">Jackbot OS 官方桌面环境</div>
+                    </div>
+                    <div class="package-version">1000-1</div>
+                </li>
+                <li class="package-item">
+                    <div>
+                        <div class="package-name">jackbot-installer <span class="badge">安装</span></div>
+                        <div class="package-desc">Jackbot OS 图形化安装程序</div>
+                    </div>
+                    <div class="package-version">1.0.0-1</div>
+                </li>
+                <li class="package-item">
+                    <div>
+                        <div class="package-name">jackbot-theme <span class="badge">主题</span></div>
+                        <div class="package-desc">Jackbot OS 官方主题包</div>
+                    </div>
+                    <div class="package-version">1000-1</div>
+                </li>
+                <li class="package-item">
+                    <div>
+                        <div class="package-name">firefox</div>
+                        <div class="package-desc">Firefox 网页浏览器</div>
+                    </div>
+                    <div class="package-version">120.0-1</div>
+                </li>
+                <li class="package-item">
+                    <div>
+                        <div class="package-name">gimp</div>
+                        <div class="package-desc">GIMP 图像编辑器</div>
+                    </div>
+                    <div class="package-version">2.10.34-1</div>
+                </li>
+                <li class="package-item">
+                    <div>
+                        <div class="package-name">geany</div>
+                        <div class="package-desc">Geany 代码编辑器</div>
+                    </div>
+                    <div class="package-version">1.38-1</div>
+                </li>
+                <li class="package-item">
+                    <div>
+                        <div class="package-name">file-manager</div>
+                        <div class="package-desc">Jackbot 文件管理器</div>
+                    </div>
+                    <div class="package-version">4.0-1</div>
+                </li>
+                <li class="package-item">
+                    <div>
+                        <div class="package-name">terminal</div>
+                        <div class="package-desc">Jackbot 终端模拟器</div>
+                    </div>
+                    <div class="package-version">1.0-1</div>
+                </li>
+                <li class="package-item">
+                    <div>
+                        <div class="package-name">text-editor</div>
+                        <div class="package-desc">Jackbot 文本编辑器</div>
+                    </div>
+                    <div class="package-version">1.0-1</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Jackbot OS Team | 软件源服务器</p>
+            <p style="margin-top: 10px; font-size: 0.8em;">
+                浏览器访问此页面 | 安装程序自动从本源下载软件包
+            </p>
+        </div>
+    </div>
+</body>
+</html>
